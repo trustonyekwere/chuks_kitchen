@@ -20,7 +20,7 @@ export default function Header(){
                         </Link>
 
                     {/* Links */}
-                        <ul className="hidden md:flex items-center gap-20 text-[16px] font-medium text-[#1F2937]">
+                        <ul className="hidden md:flex items-center gap-30 text-[16px] font-medium text-[#1F2937]">
                             <li>
                                 <Link href="#hero" className="hover:text-[#FF7A18] transition">
                                     Home

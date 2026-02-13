@@ -1,20 +1,17 @@
-import {House, Coins, HandshakeIcon} from "lucide-react"
+import Image from "next/image"
 
 const Category = [
     {
-        icon: House,
+        img: "/1.png",
         title: "Buy a home",
-        description: "Buying a home provides comfort and safety, and we are here to assist you in finding property for sale."
     },
     {
-        icon: Coins,
+        img: "/2.png",
         title: "Rent a home",
-        description: "Renting a home provides flexibility and convenience, and we are here to assist you in finding rental property."
     },
     {
-        icon: HandshakeIcon,
+        img: "/3.png",
         title: "Sell a home",
-        description: "Selling a home should be easy and hassle-free, and we are here to assist you in selling your property."
     },
 ]
 
@@ -31,12 +28,16 @@ const Categories = () => {
                         {Category.map((categories) => (
                             <div
                                 key={categories.title}
-                                className="bg-white h-auto w-80 rounded-lg justify-center items-center py-10 px-6 hover:scale-105 transition-all duration-400"
+                                className="bg-white h-auto w-80 rounded-lg hover:scale-105 transition-all duration-400"
                             >
-                                <div className="justify-center flex items-center pb-4">
-                                    <div className="bg-[#0e1527] justify-center items-center flex rounded-xl h-15 w-15 p-3">
-                                        <categories.icon size={20} />
-                                    </div>
+                                <div className="w-full pb-4">
+                                    <Image
+                                        src={categories.img} 
+                                        alt="categories"
+                                        width={200}    
+                                        height={200}    
+                                        priority
+                                    />
                                 </div>
                                 <h1 className="text-lg text-[#1F2937]">
                                     {categories.title}

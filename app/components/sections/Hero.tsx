@@ -24,9 +24,13 @@ export default function Hero() {
 
             {/* Cravings */}
             <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2">
-                <div className="rounded-sm min-w-lg bg-white px-3 py-4 flex shadow-lg gap-4">
-                    <SearchIcon color="gray" />
-                    <p className="text-black font-semibold">What are you craving for today?</p>
+                <div className="rounded-sm min-w-lg bg-white px-3 py-2 shadow-lg">
+                    <form action="" className="flex justify-center items-center gap-4">
+                        <button>
+                            <SearchIcon color="gray" />
+                        </button>
+                        <input className="text-black font-semibold w-full py-4 px-3 focus:outline-none" placeholder="What are you craving for today?" />
+                    </form>
                 </div>
             </div>
         </section>
