@@ -8,9 +8,9 @@ export default function New_menu() {
             <div className="absolute inset-0 bg-black/50"></div>
 
             {/* Content */}
-            <div className="relative z-10 max-w-6xl mx-auto h-full flex text-start items-center">
+            <div className="relative z-10 max-w-7xl px-10 mx-auto h-full flex text-start items-center">
                 <div className="text-white">
-                    <h1 className="text-5xl md:text-[48px] font-bold">
+                    <h1 className="text-4xl md:text-[48px] font-bold">
                         Introducing Our New Menu Additions!
                     </h1>
                     <p className="mt-4 sm:text-xl lg:text-2xl max-w-2xl font-semibold text-white">

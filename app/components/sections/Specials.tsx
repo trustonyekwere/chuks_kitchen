@@ -43,28 +43,28 @@ const Special = [
 const Specials = () => {
     return (
         <div className="bg-[#F3F4F6] flex justify-center items-center py-10" id="specials">
-            <div className="max-w-6xl justify-center text-center items-center m-0 py-10">
+            <div className="max-w-7xl justify-center text-center items-center m-0 py-10">
                 <h1 className="text-blue font-bold text-[32px] py-3">Chef's Specials</h1>
 
-                <div className="max-w-6xl justify-center items-center flex">
+                <div className="max-w-7xl justify-center items-center flex">
                     <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-8">
 
                         {/* specials cards */}
                         {Special.map((specials) => (
                             <div
                                 key={specials.id}
-                                className="bg-white h-auto max-w-fit rounded-lg"
+                                className="bg-white h-auto w-full rounded-lg"
                             >
-                                <div className="max-w-fit">
+                                <div className="w-full">
                                     <Image
                                         src={specials.img} 
                                         alt="specials"
                                         width={400}    
-                                        height={200}    
+                                        height={400}    
                                         priority
                                     />
                                 </div>
-                                <div className="px-5 text-start text-blue">
+                                <div className="px-5 flex-column max-w-xs text-start text-blue">
                                     <h1 className="text-xl pt-5 font-semibold">
                                         {specials.title}
                                     </h1>
@@ -84,6 +84,9 @@ const Specials = () => {
                         ))}
 
                     </div>
+                </div>
+                <div className="my-5">
+                    <ButtonLink text="View All Specials" href="/contact-us" />
                 </div>
             </div>
         </div>

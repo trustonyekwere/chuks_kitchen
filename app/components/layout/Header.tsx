@@ -8,7 +8,7 @@ export default function Header() {
         <header className="fixed top-0 left-0 z-50 w-full">
             <div className="w-full">
                 <nav className=" bg-white px-12 py-4 shadow-md">
-                    <div className="max-w-6xl mx-auto flex items-center justify-between">
+                    <div className="max-w-7xl mx-auto flex items-center justify-between">
                         {/* Logo */}
                         <Link href="#hero" className="text-lg font-bold text-white">
                         <Image
@@ -21,20 +21,20 @@ export default function Header() {
                         </Link>
 
                         {/* Links */}
-                        <ul className="hidden md:flex items-center md:gap-10 lg:gap-20 md:text-[14px] lg:text-[16px] font-medium text-blue">
+                        <ul className="hidden md:flex items-center md:gap-10 lg:gap-25 md:text-[14px] lg:text-[16px] font-medium text-blue">
                         <li>
-                            <Link href="#hero" className="text-[#FF7A18] transition">
+                            <Link href="/" className="text-[#FF7A18] transition">
                             Home
                             </Link>
                         </li>
                         <li>
-                            <Link href="#about" className="hover:text-[#FF7A18] transition">
+                            <Link href="explore" className="hover:text-[#FF7A18] transition">
                             Explore
                             </Link>
                         </li>
                         <li>
                             <Link
-                            href="#features"
+                            href="#orders"
                             className="hover:text-[#FF7A18] transition"
                             >
                             My Orders
@@ -42,7 +42,7 @@ export default function Header() {
                         </li>
                         <li>
                             <Link
-                            href="#property"
+                            href="#account"
                             className="hover:text-[#FF7A18] transition"
                             >
                             Account

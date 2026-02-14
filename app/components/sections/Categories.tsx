@@ -1,4 +1,5 @@
 import Image from "next/image"
+import ButtonLink from "../ui/Button";
 
 const Category = [
     {
@@ -36,10 +37,10 @@ const Category = [
 const Categories = () => {
     return (
         <div className="bg-[#F3F4F6] flex justify-center items-center py-10" id="categories">
-            <div className="max-w-6xl justify-center text-center items-center m-0 py-10">
+            <div className="max-w-7xl justify-center text-center items-center m-0 py-10">
                 <h1 className="text-blue font-bold text-[32px] py-3">Popular Categories</h1>
 
-                <div className="max-w-6xl justify-center items-center flex">
+                <div className="max-w-7xl justify-center items-center flex">
                     <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-8">
 
                         {/* categories cards */}
@@ -64,6 +65,9 @@ const Categories = () => {
                         ))}
 
                     </div>
+                </div>
+                <div className="mt-4">
+                    <ButtonLink text="View All Categories" href="/contact-us" />
                 </div>
             </div>
         </div>
