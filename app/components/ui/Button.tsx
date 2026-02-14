@@ -19,9 +19,10 @@ export default function ButtonLink({ text, href }: ButtonLinkProps) {
                 text-sm
                 font-medium
                 text-white
-                transition
+                transition-all
+                duration-400
                 hover:bg-orange-500
-                hover:scale-105
+                hover:-translate-y-1
             "
             >
             {text}

@@ -6,7 +6,7 @@ import Footer from "./components/layout/Footer"
 import Hero from "./components/sections/Hero"
 import Categories from "./components/sections/Categories"
 import Specials from "./components/sections/Specials"
-import New from "./components/sections/New"
+import New_menu from "./components/sections/New_menu"
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <Hero />
       <Categories />
       <Specials />
-      <New />
+      <New_menu />
       <Footer />
     </>
   )
