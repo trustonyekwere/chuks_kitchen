@@ -35,7 +35,7 @@ const Category = [
 
 const Categories = () => {
     return (
-        <div className="bg-white/90 flex justify-center items-center py-10" id="categories">
+        <div className="bg-[#F3F4F6] flex justify-center items-center py-10" id="categories">
             <div className="max-w-6xl justify-center text-center items-center m-0 py-10">
                 <h1 className="text-blue font-bold text-[32px] py-3">Popular Categories</h1>
 
@@ -46,7 +46,7 @@ const Categories = () => {
                         {Category.map((categories) => (
                             <div
                                 key={categories.id}
-                                className="bg-white h-auto w-full rounded-lg hover:-translate-y-1 transition-all duration-400"
+                                className="bg-white h-auto w-full cursor-pointer rounded-lg hover:-translate-y-1 transition-all duration-400"
                             >
                                 <div className="w-full">
                                     <Image

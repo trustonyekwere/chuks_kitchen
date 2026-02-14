@@ -10,7 +10,7 @@ export default function Footer() {
         <>
             <section className="bg-[#62412E]">
                 <div className="mx-auto max-w-6xl px-6 pt-18 pb-5">
-                    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-6">
+                    <div className="grid sm:grid-cols-1 md:grid-cols-[2fr_1.2fr_1.2fr_1fr] lg:grid-cols-[2fr_1.2fr_1.2fr_1fr] gap-8">
                         <div>
                             {/* Logo */}
                             <Link href="#hero" className="text-xl font-bold text-white">
@@ -22,36 +22,38 @@ export default function Footer() {
                                     priority
                                 />
                             </Link>
-                            <p className="mt-2 text-xl text-gray-300">Bringing the authentic flavors of Nigerian home cooking to your table, with passion and care.</p>
+                            <p className="mt-2 text-xl leading-relaxed text-white">Bringing the authentic flavors of Nigerian home cooking to your table, with passion and care.</p>
                         </div>
                         <div>
-                            <h1 className="font-semibold text-xl">Quick Links</h1>
-                            <ul className="text-gray-400 space-y-1 mt-2">
-                                <li><a href="#about" className="hover:text-gray-300">About Us</a></li>
-                                <li><a href="#features" className="hover:text-gray-300">Features</a></li>
-                                <li><a href="#property" className="hover:text-gray-300">Property</a></li>
-                                <li><a href="#blog" className="hover:text-gray-300">Blog</a></li>
+                            <h1 className="font-medium text-xl">Quick Links</h1>
+                            <ul className="text-gray-300 space-y-4 mt-2 text-xs">
+                                <li><a href="#about" className="hover:text-white">Home</a></li>
+                                <li><a href="#about" className="hover:text-white">Explore</a></li>
+                                <li><a href="#features" className="hover:text-white">My Orders</a></li>
+                                <li><a href="#property" className="hover:text-white">Account</a></li>
+                                <li><a href="#blog" className="hover:text-white">Contact</a></li>
                             </ul>
                         </div>
                         <div>
-                            <h1 className="font-semibold text-xl">Contact Us</h1>
-                            <ul className="text-gray-400 space-y-1 mt-2">
-                                <li><a href="https://wa.me/+2348108212511" className="hover:text-gray-300">+234 810 821 2511</a></li>
-                                <li><a href="mailto:trustonyekwere151@gmail.com" className="hover:text-gray-300">trustonyekwere151@gmail.com</a></li>
+                            <h1 className="font-medium text-xl">Contact Us</h1>
+                            <ul className="text-gray-300 space-y-4 mt-2 text-xs">
+                                <li><a href="#" className="hover:text-white">+234 801 234 5678</a></li>
+                                <li><a href="#" className="hover:text-white">hello@chukskitchen.com</a></li>
+                                <li><a href="#" className="hover:text-white">123 Taste Blvd, Lagos, Nigeria</a></li>
                             </ul>
                         </div>
                         <div>
-                            <ul className="text-gray-400 space-y-1 mt-2">
-                                <li><a href="#" className="hover:text-gray-300">Facebook</a></li>
-                                <li><a href="#" className="hover:text-gray-300">Twitter</a></li>
-                                <li><a href="#" className="hover:text-gray-300">LinkedIn</a></li>
-                                <li><a href="#" className="hover:text-gray-300">Instagram</a></li>
+                            <ul className="text-gray-300 space-y-4 text-xs">
+                                <li><a href="#" className="hover:text-white">Facebook</a></li>
+                                <li><a href="#" className="hover:text-white">Twitter</a></li>
+                                <li><a href="#" className="hover:text-white">LinkedIn</a></li>
+                                <li><a href="#" className="hover:text-white">Instagram</a></li>
                             </ul>
                         </div>
                     </div>
                     <br />
-                    <div className="flex justify-center items-center pt-6 text-white">
-                        <p>&copy; {currentYear} Real Estate. All Rights Reserved.</p>
+                    <div className="flex justify-start items-center text-xs font-light py-6 text-white">
+                        <p>&copy; {currentYear} Lift Media. All rights reserved.</p>
                     </div>
                 </div>
             </section>

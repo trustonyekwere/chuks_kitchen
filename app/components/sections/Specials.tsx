@@ -42,7 +42,7 @@ const Special = [
 
 const Specials = () => {
     return (
-        <div className="bg-white/90 flex justify-center items-center py-10" id="specials">
+        <div className="bg-[#F3F4F6] flex justify-center items-center py-10" id="specials">
             <div className="max-w-6xl justify-center text-center items-center m-0 py-10">
                 <h1 className="text-blue font-bold text-[32px] py-3">Chef's Specials</h1>
 

@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <header className="fixed top-0 left-0 z-50 w-full">
             <div className="w-full">
-                <nav className=" bg-white px-12 py-4">
+                <nav className=" bg-white px-12 py-4 shadow-md">
                     <div className="max-w-6xl mx-auto flex items-center justify-between">
                         {/* Logo */}
                         <Link href="#hero" className="text-lg font-bold text-white">
@@ -23,7 +23,7 @@ export default function Header() {
                         {/* Links */}
                         <ul className="hidden md:flex items-center md:gap-10 lg:gap-20 md:text-[14px] lg:text-[16px] font-medium text-blue">
                         <li>
-                            <Link href="#hero" className="hover:text-[#FF7A18] transition">
+                            <Link href="#hero" className="text-[#FF7A18] transition">
                             Home
                             </Link>
                         </li>
