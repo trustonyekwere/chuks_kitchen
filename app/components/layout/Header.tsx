@@ -28,7 +28,7 @@ export default function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="explore" className="hover:text-[#FF7A18] transition">
+                            <Link href="/explore" className="hover:text-[#FF7A18] transition">
                             Explore
                             </Link>
                         </li>

@@ -1,3 +1,7 @@
+// Layout
+import Header from "./components/layout/Header"
+import Footer from "./components/layout/Footer"
+
 import { Inter } from "next/font/google"
 import type { Metadata } from "next";
 import "./globals.css";
@@ -19,8 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
-        {children}
-        <BackToTop />
+          <Header />
+              {children}
+              <BackToTop />
+          <Footer />
       </body>
     </html>
   );

@@ -24,7 +24,7 @@ export default function BackToTop() {
     return (
         <button
         onClick={scrollToTop}
-        className="fixed bottom-6 right-6 bg-[#0081FE] text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition"
+        className="fixed bottom-6 right-6 cursor-pointer bg-[#0081FE] text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition"
         >
             <ArrowUpIcon />
         </button>
