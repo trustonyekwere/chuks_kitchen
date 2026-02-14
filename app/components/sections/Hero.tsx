@@ -1,3 +1,6 @@
+"use client"
+
+import { motion } from "framer-motion"
 import { SearchIcon } from "lucide-react"
 import ButtonLink from "../ui/Button"
 
@@ -10,17 +13,24 @@ export default function Hero() {
             {/* Content */}
             <div className="relative z-10 max-w-7xl px-10 mx-auto h-full flex text-start items-center">
                 <div className="max-w-200">
-                    <div className="text-white">
-                        <h1 className="text-4xl md:text-[48px] font-bold">
-                            The Heart of Nigerian Home Cooking
-                        </h1>
-                        <p className="mt-4 sm:text-xl lg:text-2xl font-semibold text-white">
-                            Handcrafted with passion, delivered with care.
-                        </p>
-                        <div className="mt-4">
-                            <ButtonLink text="Discover what’s new" href="/contact-us" />
+                    <motion.div 
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.7 }}
+                        viewport={{ once: true }}
+                    >
+                        <div className="text-white">
+                            <h1 className="text-4xl md:text-[48px] font-bold">
+                                The Heart of Nigerian Home Cooking
+                            </h1>
+                            <p className="mt-4 sm:text-xl lg:text-2xl font-semibold text-white">
+                                Handcrafted with passion, delivered with care.
+                            </p>
+                            <div className="mt-4">
+                                <ButtonLink text="Discover what’s new" href="/contact-us" />
+                            </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
 

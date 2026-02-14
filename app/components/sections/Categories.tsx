@@ -1,3 +1,6 @@
+"use client"
+
+import { motion } from "framer-motion"
 import Image from "next/image"
 import ButtonLink from "../ui/Button";
 
@@ -38,37 +41,57 @@ const Categories = () => {
     return (
         <div className="bg-[#F3F4F6] flex justify-center items-center py-10" id="categories">
             <div className="max-w-7xl justify-center text-center items-center m-0 py-10">
-                <h1 className="text-blue font-bold text-[32px] py-3">Popular Categories</h1>
+                <motion.div      
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    className="p-5"
+                >
+                    <h1 className="text-blue font-bold text-[32px] py-3">Popular Categories</h1>
+                </motion.div>
 
                 <div className="max-w-7xl justify-center items-center flex">
                     <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-8">
 
                         {/* categories cards */}
                         {Category.map((categories) => (
-                            <div
+                            <motion.div      
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6 }}
+                                viewport={{ once: true }}
                                 key={categories.id}
-                                className="bg-white h-auto w-full cursor-pointer rounded-lg hover:-translate-y-1 transition-all duration-400"
                             >
-                                <div className="w-full">
-                                    <Image
-                                        src={categories.img} 
-                                        alt="categories"
-                                        width={400}    
-                                        height={400}    
-                                        priority
-                                    />
+                                <div className="bg-white h-auto w-full cursor-pointer rounded-lg hover:-translate-y-1 transition-all duration-400">
+                                    <div className="w-full">
+                                        <Image
+                                            src={categories.img} 
+                                            alt="categories"
+                                            width={400}    
+                                            height={400}    
+                                            priority
+                                        />
+                                    </div>
+                                    <h1 className="text-xl py-10 font-semibold text-blue">
+                                        {categories.title}
+                                    </h1>
                                 </div>
-                                <h1 className="text-xl py-10 font-semibold text-blue">
-                                    {categories.title}
-                                </h1>
-                            </div>
+                            </motion.div>
                         ))}
 
                     </div>
                 </div>
-                <div className="mt-4">
-                    <ButtonLink text="View All Categories" href="/contact-us" />
-                </div>
+                <motion.div      
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                >
+                    <div className="mt-4">
+                        <ButtonLink text="View All Categories" href="/contact-us" />
+                    </div>
+                </motion.div>
             </div>
         </div>
     )
