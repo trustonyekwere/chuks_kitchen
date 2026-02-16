@@ -21,7 +21,7 @@ export default function Hero({ title, subtitle, buttonText, buttonHref, bgImage,
             <div className="absolute inset-0 bg-black/50"></div>
 
             {/* Content */}
-            <div className="relative z-10 max-w-7xl px-10 mx-auto h-full flex text-start items-center">
+            <div className="relative z-10 max-w-7xl px-6 mx-auto h-full flex text-start items-center">
                 <div className="max-w-200">
                     <motion.div 
                         initial={{ opacity: 0, y: 50 }}

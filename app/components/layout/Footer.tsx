@@ -26,7 +26,7 @@ export default function Footer() {
                         </div>
                         <div>
                             <h1 className="font-medium text-xl">Quick Links</h1>
-                            <ul className="text-gray-300 space-y-4 mt-2 lg:text-xs text-sm">
+                            <ul className="text-gray-300 space-y-4 mt-2 text-sm">
                                 <li><a href="#home" className="hover:text-white">Home</a></li>
                                 <li><a href="#explore" className="hover:text-white">Explore</a></li>
                                 <li><a href="#orders" className="hover:text-white">My Orders</a></li>
@@ -36,14 +36,14 @@ export default function Footer() {
                         </div>
                         <div>
                             <h1 className="font-medium text-xl">Contact Us</h1>
-                            <ul className="text-gray-300 space-y-4 mt-2 lg:text-xs text-sm">
+                            <ul className="text-gray-300 space-y-4 mt-2 text-sm">
                                 <li><a href="#" className="hover:text-white">+234 801 234 5678</a></li>
                                 <li><a href="#" className="hover:text-white">hello@chukskitchen.com</a></li>
                                 <li><a href="#" className="hover:text-white">123 Taste Blvd, Lagos, Nigeria</a></li>
                             </ul>
                         </div>
                         <div>
-                            <ul className="text-gray-300 space-y-4 lg:text-xs text-sm">
+                            <ul className="text-gray-300 space-y-4 text-sm">
                                 <li><a href="#" className="hover:text-white">Facebook</a></li>
                                 <li><a href="#" className="hover:text-white">Twitter</a></li>
                                 <li><a href="#" className="hover:text-white">LinkedIn</a></li>
@@ -52,7 +52,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <br />
-                    <div className="flex justify-start items-center text-xs font-light py-6 text-white">
+                    <div className="flex justify-start items-center text-sm font-light py-6 text-white">
                         <p>&copy; {currentYear} Lift Media. All rights reserved.</p>
                     </div>
                 </div>
