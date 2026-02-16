@@ -1,10 +1,11 @@
 "use client"
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation"
 import ButtonLink from "../ui/Button";
-import { MenuIcon } from "lucide-react";
+import { MenuIcon, X } from "lucide-react";
 
 export default function Header() {
     const pathname = usePathname()
@@ -15,6 +16,8 @@ export default function Header() {
         ? "text-[#FF7A18] font-semibold"
         : "text-[#1F2937] hover:text-[#FF7A18]"
     }`
+
+    const [open, setOpen] = useState(false)
 
     return (
         <header className="fixed top-0 left-0 z-50 w-full">
@@ -62,11 +65,50 @@ export default function Header() {
                         </div>
 
                         {/* HAMBURGER */}
-                        <div className="flex md:hidden">
-                            <MenuIcon color="black" />
-                        </div>
+                        <button
+                            onClick={() => setOpen(!open)}
+                            className="flex md:hidden"
+                            aria-label="Toggle menu"
+                        >
+                            {open ? <X size={28} color="black" /> : <MenuIcon size={28} color="black" />}
+                        </button>
                     </div>
                 </nav>
+                {/* MOBILE MENU */}
+                <div
+                    className={`md:hidden absolute left-0 w-full bg-white shadow-md transition-all duration-300 overflow-hidden
+                    ${open ? "max-h-100 py-4" : "max-h-0"}`}
+                >
+                    <ul className="flex flex-col gap-6 px-6 text-[15px] font-medium">
+                        <li>
+                            <Link href="/" onClick={() => setOpen(false)} className={linkClass("/")}>
+                                Home
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link href="/explore" onClick={() => setOpen(false)} className={linkClass("/explore")}>
+                                Explore
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link href="/orders" onClick={() => setOpen(false)} className={linkClass("/orders")}>
+                                My Orders
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link href="/account" onClick={() => setOpen(false)} className={linkClass("/account")}>
+                                Account
+                            </Link>
+                        </li>
+
+                        <li className="pt-2">
+                            <ButtonLink text="Login" href="#login" />
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
     );
