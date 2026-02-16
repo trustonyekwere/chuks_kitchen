@@ -122,18 +122,18 @@ export default function Menu() {
                                     key={popular.id}
                                 >
                                     <div className="bg-white h-full w-full rounded-2xl flex md:block" >
-                                        <div className="w-full">
+                                        <div className="flex justify-center items-center">
                                             <Image
                                                 src={popular.img} 
                                                 alt="Popular Samples"
-                                                width={400}    
-                                                height={400}    
+                                                width={350}    
+                                                height={250}    
                                                 priority
-                                                className="rounded-tl-2xl md:rounded-t-2xl"
+                                                className="rounded-2xl md:rounded-t-2xl"
                                             />
                                         </div>
                                         <div>
-                                            <div className="px-5 flex-column max-w-sm text-start text-blue">
+                                            <div className="px-4 flex-column max-w-sm text-start text-blue">
                                                 <h1 className="text-sm md:text-xl pt-5 font-semibold">
                                                     {popular.title}
                                                 </h1>
@@ -141,7 +141,7 @@ export default function Menu() {
                                                     {popular.description}
                                                 </p>
                                             </div>
-                                            <div className="flex justify-between items-center px-5 py-4 md:py-8">
+                                            <div className="flex justify-between items-center px-4 py-4 md:py-8">
                                                 <div>
                                                     <p className="text-orange text-sm md:text-lg">{popular.price}</p>
                                                 </div>
@@ -184,19 +184,19 @@ export default function Menu() {
                                     viewport={{ once: true }}
                                     key={jollof.id}
                                 >
-                                    <div className="bg-white h-auto w-full rounded-2xl flex md:block" >
-                                        <div className="w-full">
+                                    <div className="bg-white h-full w-full rounded-2xl flex md:block" >
+                                        <div className="flex justify-center items-center">
                                             <Image
                                                 src={jollof.img} 
-                                                alt="Jollof Rice"
-                                                width={400}    
-                                                height={400}    
+                                                alt="Jollof Rice & Entrees"
+                                                width={350}    
+                                                height={250}    
                                                 priority
-                                                className="rounded-tl-2xl md:rounded-t-2xl"
+                                                className="rounded-2xl md:rounded-t-2xl"
                                             />
                                         </div>
                                         <div>
-                                            <div className="px-5 flex-column max-w-sm text-start text-blue">
+                                            <div className="px-4 flex-column max-w-sm text-start text-blue">
                                                 <h1 className="text-sm md:text-xl pt-5 font-semibold">
                                                     {jollof.title}
                                                 </h1>
@@ -204,7 +204,7 @@ export default function Menu() {
                                                     {jollof.description}
                                                 </p>
                                             </div>
-                                            <div className="flex justify-between items-center px-5 py-4 md:py-8">
+                                            <div className="flex justify-between items-center px-4 py-4 md:py-8">
                                                 <div>
                                                     <p className="text-orange text-sm md:text-lg">{jollof.price}</p>
                                                 </div>
@@ -248,18 +248,18 @@ export default function Menu() {
                                     key={swallow.id}
                                 >
                                     <div className="bg-white h-full w-full rounded-2xl flex md:block" >
-                                        <div className="w-full">
+                                        <div className="flex justify-center items-center">
                                             <Image
                                                 src={swallow.img} 
-                                                alt="Swallow"
-                                                width={400}    
-                                                height={400}    
+                                                alt="Swallow & Soups"
+                                                width={350}    
+                                                height={250}    
                                                 priority
-                                                className="rounded-tl-2xl md:rounded-t-2xl"
+                                                className="rounded-2xl md:rounded-t-2xl"
                                             />
                                         </div>
                                         <div>
-                                            <div className="px-5 flex-column max-w-sm text-start text-blue">
+                                            <div className="px-4 flex-column max-w-sm text-start text-blue">
                                                 <h1 className="text-sm md:text-xl pt-5 font-semibold">
                                                     {swallow.title}
                                                 </h1>
@@ -267,7 +267,7 @@ export default function Menu() {
                                                     {swallow.description}
                                                 </p>
                                             </div>
-                                            <div className="flex justify-between items-center px-5 py-4 md:py-8">
+                                            <div className="flex justify-between items-center px-4 py-4 md:py-8">
                                                 <div>
                                                     <p className="text-orange text-sm md:text-lg">{swallow.price}</p>
                                                 </div>
