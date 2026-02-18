@@ -22,8 +22,8 @@ export default function Header() {
     return (
         <header className="fixed top-0 left-0 z-50 w-full">
             <div className="w-full">
-                <nav className=" bg-white px-6 py-4 shadow-md">
-                    <div className="max-w-7xl mx-auto flex items-center justify-between">
+                <nav className=" bg-white py-4 shadow-md">
+                    <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
                         {/* Logo */}
                         <Link href="/">
                             <Image
