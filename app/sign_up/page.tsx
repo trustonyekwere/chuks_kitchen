@@ -64,7 +64,7 @@ export default function Sign_up() {
                     </h2>
 
                     {/* Form */}
-                    <form action="/login" method="POST">
+                    <form action="/" method="POST">
                         {/* Email */}
                         <label className="text-sm text-gray-600">Email</label>
                         <div className="relative mt-1 mb-5">

@@ -10,7 +10,7 @@ import Footer from "../components/layout/Footer"
 
 // components
 import BackToTop from "../components/ui/BackToTop";
-import Dropdown from "../components/sections/Dropdown"
+import Dropdown from "../components/sections/Menu_dropdown"
 
 export default function Explore() {
     return (

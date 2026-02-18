@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { ChevronDown } from "lucide-react"
+import { ChevronDown, ChevronUp } from "lucide-react"
 
 const Dropdown = () => {
     const [open, setOpen] = useState(true)
@@ -10,9 +10,11 @@ const Dropdown = () => {
             <div className="flex justify-center items-center md:py-20 pb-15 bg-gray-100">
                 <div className="w-full mx-auto max-w-7xl bg-white md:rounded-lg">
                     {/* Button */}
-                    <button onClick={() => setOpen(!open)} className="w-full flex items-center justify-between text-xl font-semibold text-black  px-4 py-5 rounded-md">
+                    <button 
+                        onClick={() => setOpen(!open)} className="w-full flex items-center justify-between text-xl font-semibold text-black  px-4 py-5 rounded-md cursor-pointer"
+                    >
                         Menu Categories
-                        <ChevronDown size={18} />
+                        {open ? <ChevronUp size={18}/> : <ChevronDown size={18}/>}
                     </button>
 
                     {/* Dropdown */}
