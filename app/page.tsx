@@ -4,9 +4,17 @@ import Categories from "./components/sections/Categories"
 import Specials from "./components/sections/Specials"
 import New_menu from "./components/sections/New_menu"
 
+// layout
+import Header from "./components/layout/Header"
+import Footer from "./components/layout/Footer"
+
+// components
+import BackToTop from "./components/ui/BackToTop";
+
 export default function Home() {
   return (
     <>
+      <Header />
       <Hero 
           title="The Heart of Nigerian Home Cooking"
           subtitle="Handcrafted with passion, delivered with care."
@@ -19,6 +27,8 @@ export default function Home() {
       <Categories />
       <Specials />
       <New_menu />
+      <BackToTop />
+      <Footer />
     </>
   )
 }

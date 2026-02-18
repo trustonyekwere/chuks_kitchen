@@ -20,6 +20,7 @@ export default function Footer() {
                                     width={183}
                                     height={41} 
                                     priority
+                                    draggable="false"
                                 />
                             </Link>
                             <p className="mt-2 text-xl leading-relaxed text-white">Bringing the authentic flavors of Nigerian home cooking to your table, with passion and care.</p>

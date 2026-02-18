@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { PlusIcon } from "lucide-react";
+import ButtonLink from "../ui/Button";
 
 const popular = [
     {
@@ -158,6 +159,16 @@ export default function Menu() {
 
                         </div>
                     </div>
+                        <motion.div      
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                            viewport={{ once: true }}
+                        >
+                            <div className="my-4">
+                                <ButtonLink text="View All Categories" href="#" />
+                            </div>
+                        </motion.div>
                 </div>
             </section>
             
@@ -221,6 +232,16 @@ export default function Menu() {
 
                         </div>
                     </div>
+                        <motion.div      
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                            viewport={{ once: true }}
+                        >
+                            <div className="my-4">
+                                <ButtonLink text="View All Categories" href="#" />
+                            </div>
+                        </motion.div>
                 </div>
             </section>
 
@@ -284,6 +305,16 @@ export default function Menu() {
 
                         </div>
                     </div>
+                        <motion.div      
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                            viewport={{ once: true }}
+                        >
+                            <div className="my-4">
+                                <ButtonLink text="View All Categories" href="#" />
+                            </div>
+                        </motion.div>
                 </div>
             </section>
         </>

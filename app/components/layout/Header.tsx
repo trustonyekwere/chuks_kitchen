@@ -32,6 +32,7 @@ export default function Header() {
                                 width={183}
                                 height={41}
                                 priority
+                                draggable="false"
                             />
                         </Link>
 
@@ -61,7 +62,7 @@ export default function Header() {
 
                         {/* CTA */}
                         <div className="hidden md:flex">
-                            <ButtonLink text="Login" href="#login" />
+                            <ButtonLink text="Login" href="/login" />
                         </div>
 
                         {/* HAMBURGER */}
