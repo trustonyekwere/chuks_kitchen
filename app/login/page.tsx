@@ -9,7 +9,7 @@ import { useState } from "react"
 // components
 import BackToTop from "../components/ui/BackToTop";
 
-export default function Sign_up() {
+export default function Login() {
     const [showPassword, setShowPassword] = useState(false)
     
     return (

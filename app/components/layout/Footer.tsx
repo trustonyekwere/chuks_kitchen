@@ -13,7 +13,7 @@ export default function Footer() {
                     <div className="grid sm:grid-cols-1 md:grid-cols-[2fr_1.2fr_1.2fr_1fr] lg:grid-cols-[2fr_1.2fr_1.2fr_1fr] gap-8">
                         <div>
                             {/* Logo */}
-                            <Link href="#hero" className="text-xl font-bold text-white">
+                            <Link href="/" className="text-xl font-bold text-white">
                                 <Image
                                     src="/Chuks_Kitchen.png"
                                     alt="Chuks Kitchen"
