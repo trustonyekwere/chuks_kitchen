@@ -68,7 +68,7 @@ export default function Header() {
                         {/* HAMBURGER */}
                         <button
                             onClick={() => setOpen(!open)}
-                            className="flex md:hidden"
+                            className="flex md:hidden cursor-pointer"
                             aria-label="Toggle menu"
                         >
                             {open ? <X size={28} color="black" /> : <MenuIcon size={28} color="black" />}
