@@ -75,7 +75,7 @@ const jollof = [
 const swallow = [
     {
         id: "10",
-        img: "/amala.jpg",
+        img: "/Amala.jpg",
         title: "Amala with Gbegiri & Ewedu",
         description: "Classic Amala served with Gbegiri (beans) and Ewedu (jute leaf) soup.",
         price: "₦3,100",

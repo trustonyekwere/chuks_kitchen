@@ -18,7 +18,7 @@ export default function Home() {
       <Hero 
           title="The Heart of Nigerian Home Cooking"
           subtitle="Handcrafted with passion, delivered with care."
-          bgImage="/hero.jpg" 
+          bgImage="/Hero.jpg" 
           height="h-screen"
           buttonText="Discover what’s new"
           buttonHref="/"
