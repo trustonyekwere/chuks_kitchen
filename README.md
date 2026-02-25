@@ -45,6 +45,7 @@ I translated the Figma design into a responsive website using Tailwind CSS for s
 * The dropdown menu on the [Explore page](http://chukskitchen-trust.vercel.app/explore) was not specified as a dropdown but looked like one, so i added a down arrow icon to indicate that it is a dropdown menu and made the links a bit functional as well, thus improving user experience.
 * Certain mobile views had design flaws in their layout like the cards on the [Explore page](http://chukskitchen-trust.vercel.app/explore) and the [My Orders page](http://chukskitchen-trust.vercel.app/orders), which didn't have a mobile friendly/logical layout. I redesigned the mobile view of the cards for a more refined and professional look to ensure a better user experience on mobile devices.
 * There was also no Header or Footer designs for the mobile view of the pages, so I added a simple header and footer to the mobile view of the pages.
+* Finally, there was a lack of proper text heirachy in some of the pages. Hence, I implemented proper text heirachy to improve the overall UI of the pages
 
 ## Limitations & Improvements
 If given more time, i would love to add more screens/pages and make the entire site a bit more interactive by adding a functional cart and a dark mode feature to enhance user experience.
@@ -70,6 +71,7 @@ npm run start
 To get started, run the development server:
 
 ```bash
+cd chuks_kitchen
 npm run dev
 ```
 
