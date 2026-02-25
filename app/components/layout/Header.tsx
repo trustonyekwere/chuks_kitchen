@@ -106,7 +106,7 @@ export default function Header() {
                         </li>
 
                         <li className="pt-2">
-                            <ButtonLink text="Login" href="#login" />
+                            <ButtonLink text="Login" href="/login" />
                         </li>
                     </ul>
                 </div>

@@ -52,7 +52,7 @@ const Categories = () => {
                 </motion.div>
 
                 <div className="max-w-7xl justify-center items-center flex">
-                    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-8">
+                    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-8 max-w-7xl mx-auto px-6">
 
                         {/* categories cards */}
                         {Category.map((categories) => (
@@ -63,14 +63,15 @@ const Categories = () => {
                                 viewport={{ once: true }}
                                 key={categories.id}
                             >
-                                <div className="bg-white h-auto w-full cursor-pointer rounded-lg hover:-translate-y-1 transition-all duration-400">
-                                    <div className="w-full">
+                                <div className="bg-white h-full w-full flex flex-col md:block cursor-pointer rounded-lg hover:-translate-y-1 transition-all duration-400">
+                                    <div className="flex justify-center items-center">
                                         <Image
                                             src={categories.img} 
                                             alt="categories"
                                             width={400}    
                                             height={400}    
                                             priority
+                                            className="w-100 rounded-t-lg"
                                         />
                                     </div>
                                     <h1 className="text-xl py-10 font-semibold text-blue">

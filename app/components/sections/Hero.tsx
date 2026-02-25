@@ -51,12 +51,12 @@ export default function Hero({ title, subtitle, buttonText, buttonHref, bgImage,
             {/* search form */}
             {placeholder && (
                 <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <div className="rounded-md min-w-md md:min-w-2xl bg-white px-3 py-1 shadow-lg">
-                        <form action="" className="flex justify-center items-center gap-4">
+                    <div className="rounded-md min-w-80 max-w-screen md:min-w-2xl bg-white px-3 py-1 shadow-lg">
+                        <form action="" className="flex justify-center items-center gap-2 md:gap-4">
                             <button name="submit" className="cursor-pointer">
-                                <SearchIcon size={35} color="gray" />
+                                <SearchIcon size={30} color="gray" />
                             </button>
-                            <input name="cravings" className="text-black font-semibold w-full py-4 pe-10 focus:outline-none placeholder:text-gray-600" placeholder={placeholder} />
+                            <input name="cravings" className="text-black text-sm md:text-lg font-semibold w-full py-4 pe-10 focus:outline-none placeholder:text-gray-600" placeholder={placeholder} />
                         </form>
                     </div>
                 </div>

@@ -57,8 +57,8 @@ const Specials = () => {
                     <h1 className="text-blue font-bold text-[32px] py-3">Chef's Specials</h1>
                 </motion.div>
 
-                <div className="max-w-7xl justify-center items-center flex">
-                    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-8">
+                <div className="max-w-7xl mx-auto justify-center items-center flex">
+                    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-8 px-6">
 
                         {/* specials cards */}
                         {Special.map((specials) => (
@@ -81,7 +81,7 @@ const Specials = () => {
                                             priority
                                         />
                                     </div>
-                                    <div className="px-5 flex-column max-w-xs text-start text-blue">
+                                    <div className="px-5 flex-column max-w-xs md:max-w-lg text-start text-blue">
                                         <h1 className="text-xl pt-5 font-semibold">
                                             {specials.title}
                                         </h1>

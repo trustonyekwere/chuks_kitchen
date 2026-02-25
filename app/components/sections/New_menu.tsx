@@ -11,7 +11,7 @@ export default function New_menu() {
             <div className="absolute inset-0 bg-black/50"></div>
 
             {/* Content */}
-            <div className="relative z-10 max-w-7xl px-10 mx-auto h-full flex text-start items-center">
+            <div className="relative max-w-7xl mx-auto px-6 h-full flex text-start items-center">
                 <motion.div      
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
