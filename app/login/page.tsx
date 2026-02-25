@@ -1,6 +1,6 @@
 "use client"
 
-import Footer from "../components/layout/Footer"
+import { Island_Moments } from "next/font/google"
 import Image from "next/image"
 import Link from "next/link"
 import { Eye, EyeOff, Mail, LockKeyhole } from "lucide-react"
@@ -8,6 +8,11 @@ import { useState } from "react"
 
 // components
 import BackToTop from "../components/ui/BackToTop";
+
+const logoFont = Island_Moments({
+    subsets: ["latin"],
+    weight: ["400"],
+})
 
 export default function Login() {
     const [showPassword, setShowPassword] = useState(false)
@@ -48,14 +53,7 @@ export default function Login() {
 
                     {/* Logo */}
                     <div className="justify-center items-center flex">
-                        <Image
-                            src="/Chuks_Kitchen.png"
-                            alt="Chuks Kitchen"
-                            width={183}
-                            height={41}
-                            priority
-                            draggable="false"
-                        />
+                        <h1 className={`${logoFont.className} text-[40px] text-orange`}>Chuks Kitchen</h1>
                     </div>
 
                     <h2 className="text-center text-blue text-2xl font-semibold mt-2 mb-8">
