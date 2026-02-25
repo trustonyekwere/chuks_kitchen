@@ -179,9 +179,6 @@ export default function Sign_up() {
 
             {/* Back To Top Button */}
             <BackToTop />
-
-            {/* Footer */}
-            <Footer />
         </>
     )
 }

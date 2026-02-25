@@ -43,7 +43,7 @@ I translated the Figma design into a responsive website using Tailwind CSS for s
 * The figma design provided did not specify hover states for buttons and cards, so I implemented basic hover effects to enhance interactivity and user experience.
 * It also included design flaws like footers in the login and sign-up pages, which I removed to enhance the user experience. 
 * The dropdown menu on the [Explore page](http://chukskitchen-trust.vercel.app/explore) was not specified as a dropdown but looked like one, so i added a down arrow icon to indicate that it is a dropdown menu and made the links a bit functional as well, thus improving user experience.
-* Certain mobile views had design flaws in their layout like the cards on the [My Orders page](http://chukskitchen-trust.vercel.app/orders), which didn't have a mobile friendly layout. I redesigned the mobile view of the cards to ensure a better user experience on mobile devices.
+* Certain mobile views had design flaws in their layout like the cards on the [Explore page](http://chukskitchen-trust.vercel.app/explore) and the [My Orders page](http://chukskitchen-trust.vercel.app/orders), which didn't have a mobile friendly/logical layout. I redesigned the mobile view of the cards for a more refined and professional look to ensure a better user experience on mobile devices.
 * There was also no Header or Footer designs for the mobile view of the pages, so I added a simple header and footer to the mobile view of the pages.
 
 ## Limitations & Improvements

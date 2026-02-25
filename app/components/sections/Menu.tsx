@@ -79,7 +79,7 @@ const swallow = [
         title: "Amala with Gbegiri & Ewedu",
         description: "Classic Amala served with Gbegiri (beans) and Ewedu (jute leaf) soup.",
         price: "₦3,100",
-    },
+    }, 
     {
         id: "11",
         img: "/okra.jpg",
@@ -122,15 +122,15 @@ export default function Menu() {
                                     viewport={{ once: true }}
                                     key={popular.id}
                                 >
-                                    <div className="bg-white h-full w-full rounded-2xl flex md:block" >
-                                        <div className="flex justify-center items-center">
+                                    <div className="bg-white h-full w-full rounded-2xl flex flex-col md:block" >
+                                        <div className="flex justify-center items-center p-2 md:p-0">
                                             <Image
                                                 src={popular.img} 
                                                 alt="Popular Samples"
                                                 width={350}    
                                                 height={250}    
                                                 priority
-                                                className="rounded-2xl md:rounded-t-2xl"
+                                                className="rounded-lg md:rounded-t-2xl md:rounded-b-none w-100"
                                             />
                                         </div>
                                         <div>
@@ -195,15 +195,15 @@ export default function Menu() {
                                     viewport={{ once: true }}
                                     key={jollof.id}
                                 >
-                                    <div className="bg-white h-full w-full rounded-2xl flex md:block" >
-                                        <div className="flex justify-center items-center">
+                                    <div className="bg-white h-full w-full rounded-2xl flex flex-col md:block" >
+                                        <div className="flex justify-center items-center p-2 md:p-0">
                                             <Image
                                                 src={jollof.img} 
                                                 alt="Jollof Rice & Entrees"
                                                 width={350}    
                                                 height={250}    
                                                 priority
-                                                className="rounded-2xl md:rounded-t-2xl"
+                                                className="rounded-lg md:rounded-t-2xl md:rounded-b-none w-100"
                                             />
                                         </div>
                                         <div>
@@ -268,15 +268,15 @@ export default function Menu() {
                                     viewport={{ once: true }}
                                     key={swallow.id}
                                 >
-                                    <div className="bg-white h-full w-full rounded-2xl flex md:block" >
-                                        <div className="flex justify-center items-center">
+                                    <div className="bg-white h-full w-full rounded-2xl flex flex-col md:block" >
+                                        <div className="flex justify-center items-center p-2 md:p-0">
                                             <Image
                                                 src={swallow.img} 
                                                 alt="Swallow & Soups"
                                                 width={350}    
                                                 height={250}    
                                                 priority
-                                                className="rounded-2xl md:rounded-t-2xl"
+                                                className="rounded-lg md:rounded-t-2xl md:rounded-b-none w-100"
                                             />
                                         </div>
                                         <div>

@@ -148,9 +148,6 @@ export default function Login() {
 
             {/* Back To Top Button */}
             <BackToTop />
-
-            {/* Footer */}
-            <Footer />
         </>
     )
 }
