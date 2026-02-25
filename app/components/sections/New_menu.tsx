@@ -1,7 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { SearchIcon } from "lucide-react"
 import ButtonLink from "../ui/Button"
 
 export default function New_menu() {

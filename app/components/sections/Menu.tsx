@@ -135,7 +135,7 @@ export default function Menu() {
                                         </div>
                                         <div>
                                             <div className="px-4 flex-column max-w-sm text-start text-blue">
-                                                <h1 className="font-bold text-lg md:text-2xl py-2">
+                                                <h1 className="py-2 md:py-4 font-bold text-lg md:text-xl">
                                                     {popular.title}
                                                 </h1>
                                                 <p className="font-medium text-sm md:text-lg text-gray-400">
@@ -208,7 +208,7 @@ export default function Menu() {
                                         </div>
                                         <div>
                                             <div className="px-4 flex-column max-w-sm text-start text-blue">
-                                                <h1 className="font-bold text-lg md:text-2xl py-2">
+                                                <h1 className="py-2 md:py-4 font-bold text-lg md:text-xl">
                                                     {jollof.title}
                                                 </h1>
                                                 <p className="font-medium text-sm md:text-lg text-gray-400">
@@ -281,7 +281,7 @@ export default function Menu() {
                                         </div>
                                         <div>
                                             <div className="px-4 flex-column max-w-sm text-start text-blue">
-                                                <h1 className="py-2 font-bold text-lg md:text-2xl">
+                                                <h1 className="py-2 md:py-4 font-bold text-lg md:text-xl">
                                                     {swallow.title}
                                                 </h1>
                                                 <p className="font-medium text-sm md:text-lg text-gray-400">

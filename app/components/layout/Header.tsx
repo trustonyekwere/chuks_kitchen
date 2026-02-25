@@ -1,11 +1,16 @@
 "use client"
 
 import { useState } from "react";
-import Image from "next/image";
+import { Island_Moments } from "next/font/google"
 import Link from "next/link";
 import { usePathname } from "next/navigation"
 import ButtonLink from "../ui/Button";
 import { MenuIcon, X } from "lucide-react";
+
+const logoFont = Island_Moments({
+    subsets: ["latin"],
+    weight: ["400"],
+})
 
 export default function Header() {
     const pathname = usePathname()
@@ -22,18 +27,11 @@ export default function Header() {
     return (
         <header className="fixed top-0 left-0 z-50 w-full">
             <div className="w-full">
-                <nav className=" bg-white py-4 shadow-md">
+                <nav className=" bg-white py-2 md:py-4 shadow-md">
                     <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
                         {/* Logo */}
                         <Link href="/">
-                            <Image
-                                src="/Chuks_Kitchen.png"
-                                alt="Chuks Kitchen"
-                                width={183}
-                                height={41}
-                                priority
-                                draggable="false"
-                            />
+                            <h1 className={`${logoFont.className} text-[40px] text-orange`}>Chuks Kitchen</h1>
                         </Link>
 
                         {/* Links */}

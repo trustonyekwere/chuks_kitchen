@@ -1,7 +1,11 @@
 import {FacebookIcon, InstagramIcon, TwitterIcon} from "lucide-react"
 import Link from "next/link"
-import Image from "next/image";
-import ButtonLink from "../ui/Button"
+import { Island_Moments } from "next/font/google"
+
+const logoFont = Island_Moments({
+    subsets: ["latin"],
+    weight: ["400"],
+})
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -9,19 +13,12 @@ export default function Footer() {
     return (
         <>
             <section className="bg-[#62412E]">
-                <div className="mx-auto max-w-7xl px-6 pt-18 pb-5">
+                <div className="mx-auto max-w-7xl px-6 pt-10 md:pt-18 pb-5">
                     <div className="grid sm:grid-cols-1 md:grid-cols-[2fr_1.2fr_1.2fr_1fr] lg:grid-cols-[2fr_1.2fr_1.2fr_1fr] gap-8">
                         <div>
                             {/* Logo */}
                             <Link href="/" className="text-xl font-bold text-white">
-                                <Image
-                                    src="/Chuks_Kitchen.png"
-                                    alt="Chuks Kitchen"
-                                    width={183}
-                                    height={41} 
-                                    priority
-                                    draggable="false"
-                                />
+                                <h1 className={`${logoFont.className} text-[40px] text-orange`}>Chuks Kitchen</h1>
                             </Link>
                             <p className="mt-2 text-xl leading-relaxed text-white">Bringing the authentic flavors of Nigerian home cooking to your table, with passion and care.</p>
                         </div>
