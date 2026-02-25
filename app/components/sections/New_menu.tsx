@@ -19,7 +19,7 @@ export default function New_menu() {
                     viewport={{ once: true }}
                 >
                     <div className="text-white">
-                        <h1 className="text-4xl md:text-[48px] font-bold">
+                        <h1 className="text-3xl md:text-[48px] font-bold">
                             Introducing Our New Menu Additions!
                         </h1>
                         <p className="mt-4 sm:text-xl lg:text-2xl max-w-2xl font-semibold text-white">
