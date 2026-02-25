@@ -68,7 +68,7 @@ return (
                             {/* Details */}
                             <div className="flex-1 space-y-1 pt-4 md:pt-0">
                                 <h1 className="font-bold text-lg md:text-2xl">{item.name}</h1>
-                                <p className="text-md md:lg text-gray-500 font-medium">
+                                <p className="text-md md:text-lg text-gray-500 font-medium">
                                     {item.description}
                                 </p>
                             </div>

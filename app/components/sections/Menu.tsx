@@ -135,20 +135,20 @@ export default function Menu() {
                                         </div>
                                         <div>
                                             <div className="px-4 flex-column max-w-sm text-start text-blue">
-                                                <h1 className="text-sm md:text-xl pt-5 font-semibold">
+                                                <h1 className="font-bold text-lg md:text-2xl py-2">
                                                     {popular.title}
                                                 </h1>
-                                                <p className="pt-3 font-medium text-xs md:text-sm text-gray-400">
+                                                <p className="font-medium text-sm md:text-lg text-gray-400">
                                                     {popular.description}
                                                 </p>
                                             </div>
-                                            <div className="flex justify-between items-center px-4 py-4 md:py-8">
+                                            <div className="flex justify-between items-center px-4 py-5 md:py-8">
                                                 <div>
-                                                    <p className="text-orange text-sm md:text-lg">{popular.price}</p>
+                                                    <p className="text-orange text-md md:text-lg">{popular.price}</p>
                                                 </div>
                                                 <div>
-                                                    <button className="bg-[#FF7A18] hover:-translate-y-0.5 transition-all duration-300 rounded-full cursor-pointer md:p-1 flex items-center justify-center">
-                                                        <PlusIcon color="white" />
+                                                    <button className="bg-[#FF7A18] hover:-translate-y-0.5 transition-all duration-300 rounded-full cursor-pointer p-1 md:p-1 flex items-center justify-center">
+                                                        <PlusIcon size={20} color="white" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -208,20 +208,20 @@ export default function Menu() {
                                         </div>
                                         <div>
                                             <div className="px-4 flex-column max-w-sm text-start text-blue">
-                                                <h1 className="text-sm md:text-xl pt-5 font-semibold">
+                                                <h1 className="font-bold text-lg md:text-2xl py-2">
                                                     {jollof.title}
                                                 </h1>
-                                                <p className="pt-3 font-medium text-xs md:text-sm text-gray-400">
+                                                <p className="font-medium text-sm md:text-lg text-gray-400">
                                                     {jollof.description}
                                                 </p>
                                             </div>
-                                            <div className="flex justify-between items-center px-4 py-4 md:py-8">
+                                            <div className="flex justify-between items-center px-4 py-5 md:py-8">
                                                 <div>
-                                                    <p className="text-orange text-sm md:text-lg">{jollof.price}</p>
+                                                    <p className="text-orange text-md md:text-lg">{jollof.price}</p>
                                                 </div>
                                                 <div>
-                                                    <button className="bg-[#FF7A18] hover:-translate-y-0.5 transition-all duration-300 rounded-full cursor-pointer md:p-1 flex items-center justify-center">
-                                                        <PlusIcon color="white" />
+                                                    <button className="bg-[#FF7A18] hover:-translate-y-0.5 transition-all duration-300 rounded-full cursor-pointer p-1 md:p-1 flex items-center justify-center">
+                                                        <PlusIcon size={20} color="white" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -281,20 +281,20 @@ export default function Menu() {
                                         </div>
                                         <div>
                                             <div className="px-4 flex-column max-w-sm text-start text-blue">
-                                                <h1 className="text-sm md:text-xl pt-5 font-semibold">
+                                                <h1 className="py-2 font-bold text-lg md:text-2xl">
                                                     {swallow.title}
                                                 </h1>
-                                                <p className="pt-3 font-medium text-xs md:text-sm text-gray-400">
+                                                <p className="font-medium text-sm md:text-lg text-gray-400">
                                                     {swallow.description}
                                                 </p>
                                             </div>
-                                            <div className="flex justify-between items-center px-4 py-4 md:py-8">
+                                            <div className="flex justify-between items-center px-4 py-5 md:py-8">
                                                 <div>
-                                                    <p className="text-orange text-sm md:text-lg">{swallow.price}</p>
+                                                    <p className="text-orange text-md md:text-lg">{swallow.price}</p>
                                                 </div>
                                                 <div>
-                                                    <button className="bg-[#FF7A18] hover:-translate-y-0.5 transition-all duration-300 rounded-full cursor-pointer md:p-1 flex items-center justify-center">
-                                                        <PlusIcon color="white" />
+                                                    <button className="bg-[#FF7A18] hover:-translate-y-0.5 transition-all duration-300 rounded-full cursor-pointer p-1 md:p-1 flex items-center justify-center">
+                                                        <PlusIcon size={20} color="white" />
                                                     </button>
                                                 </div>
                                             </div>
