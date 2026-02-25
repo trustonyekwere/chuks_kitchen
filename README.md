@@ -71,6 +71,7 @@ npm run start
 To get started, run the development server:
 
 ```bash
+cd chuks_kitchen
 npm run dev
 ```
 
